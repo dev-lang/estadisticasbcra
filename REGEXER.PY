@@ -3,6 +3,7 @@
 
 import re
 import requests
+import json
 
 archivo = "lista.txt"
 invalid = "/////"
@@ -25,10 +26,18 @@ def DataScraper(i):
     json_response = response.json()
     print(api_url[i])
     archivo = api_url[i] + ".json"
+    '''with open(archivo, 'w') as jout:
+        jout.write(str(json_response))'''
     with open(archivo, 'w') as jout:
-        jout.write(str(json_response))
+        json.dump(json_response, jout)
     return json_response
 
+def executeDump():
+    if auth != "":
+       for i in range(len(api_url)):
+            DataScraper(i)
+    print( "NO SE HA ESTABLECIDO UN AUTH" )
+
 #for i in range(0,2):
-for i in range(len(api_url)):
-    DataScraper(i)
+executeDump()
+
