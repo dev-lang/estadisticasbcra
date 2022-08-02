@@ -9,7 +9,7 @@ from beta_scraper import *
 archivo = "test.txt"
 invalid = "/////"
 baseurl = "https://api.estadisticasbcra.com/"
-auth = "BEARER eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTA2NTUzOTMsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJmcmFuY29fOTUyMDEwQGhvdG1haWwuY29tIn0.67zUXQFtVSvNZ5QY7boDuuzLziIOTL3T_VKoFdoOdPRFj8GPRWg5JRzTgG4UutVAf_eukw7acCk7kvFz7bstnA"
+auth = ""
 api_url = list()
 
 scrapTags(filtered)
