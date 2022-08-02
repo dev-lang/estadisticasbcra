@@ -1,6 +1,10 @@
 # estadisticasbcra
 Scraper para estadisticas
 
+v0.4 latest changes:
+
+	- [AUTH] token is required from .txt instead of internal value
+
 v0.3 latest changes:
 
 	-[SCRAPER] initial release of scraper module for automation
