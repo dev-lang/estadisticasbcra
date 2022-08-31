@@ -37,10 +37,12 @@ def DataScraper(i):
     json_response = response.json()
     print(api_url[i])
     archivo = api_url[i] + ".json"
-    '''with open(archivo, 'w') as jout:
-        jout.write(str(json_response))'''
     with open(archivo, 'w') as jout:
-        json.dump(json_response, jout)
+        bf = json.dumps(json_response, sort_keys=True, indent=4)
+        jout.write(bf)
+        #jout.write(str(json_response))
+    '''with open(archivo, 'w') as jout:
+        json.dump(json_response, jout)'''
     return json_response
 
 def executeDump():

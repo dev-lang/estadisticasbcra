@@ -1,6 +1,10 @@
 # estadisticasbcra
 Scraper para estadisticas
 
+v0.5 latest changes:
+
+	- [JSON] "beautified" dumps for json files
+
 v0.4 latest changes:
 
 	- [AUTH] token is required from .txt instead of internal value
